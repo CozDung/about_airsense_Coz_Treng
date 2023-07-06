@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.4/dist/sweetalert2.min.js"></script>
+
+
+    <script type="text/javascript" src="/javascripts/commonView.js"></script>
+
+
+    <!-- <script src="/old/javascripts/chart.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdn.rawgit.com/chartjs/Chart.js/master/samples/utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.5/chartjs-plugin-annotation.js"></script>
+
+
+    <!-- Link to get map  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+
+
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/assets/css/flatsome.css"> -->
+    <link rel="stylesheet" href="/assets/css/authen/authen.css">
+    <link rel="stylesheet" href="/assets/css/about/about.css">
+    <link rel="stylesheet" href="/assets/css/map.css">
+
+    <!-- Blog template -->
+    <link rel="stylesheet" href="/assets/css/blog/style_1.css">
+    <link rel="stylesheet" href="/assets/css/blog/media_query.css">
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="/js/commonJS.js"></script>
+
+
+    <!-- View Detail -->
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" /> //
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> //
+    <script src="https://kit.fontawesome.com/48b1dc2f6b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/blog/view-detail.css">
+
+    <!-- Course Detail -->
+    <link rel="stylesheet" href="/assets/css/course-detail/allCourse.css">
+    <link rel="stylesheet" href="/assets/css/course-detail/viewLesson.css">
+
+    <!-- Landing Page -->
+    <link rel="stylesheet" href="/assets/css/landing-page/landing-page.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Sale -->
+    <link rel="stylesheet" href="/sale/css/owl.carousel.css">
+    <link rel="stylesheet" href="/sale/css/style.ustora.css">
+    <link rel="stylesheet" href="/sale/css/style.css">
+    <link rel="stylesheet" href="/sale/css/order.css">
+    <link rel="stylesheet" href="/sale/css/responsive.css">
+    <link rel="stylesheet" href="/sale/css/new-template/template-menu-sale.css">
+    <link rel="stylesheet" href="/sale/css/new-template/template-homepage-sale.css">
+    <link rel="stylesheet" href="/sale/css/new-template/template-detail-product-sale.css">
+    <link rel="stylesheet" href="/sale/css/new-template/template-checkout-product-sale.css">
+    <!-- OwlCarousel -->
+    <script src="/sale/js/owl.carousel.min.js"></script>
+    <script src="/sale/js/jquery.sticky.js"></script>
+    <script src="/sale/js/owl.carousel.min.js"></script>
+    <script src="/sale/js/jquery.sticky.js"></script>
+    <!-- jQuery easing -->
+    <script src="/sale/js/jquery.easing.1.3.min.js"></script>
+    <!-- Main Script -->
+    <script src="/sale/js/mainustora.js"></script>
+    <script src="/js/sweetalert2.all.min.js"></script>
+    <!-- Slider -->
+    <script type="text/javascript" src="/sale/js/bxslider.min.js"></script>
+    <script type="text/javascript" src="/sale/js/script.slider.js"></script>
+</head>
+
+<head>
+    <style>
+        :root {
+            --lp-primary-color: #5a47ab;
+            --lp-desc-color: #796f6f;
+            --lp-secondary-color: #fbd15b;
+        }
+
+        * {
+            box-sizing: inherit;
+        }
+
+        html {
+            font-size: 100%;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.4;
+        }
+    </style>
+    <style>
+        /*  */
+
+        .grid {
+            width: 100%;
+            display: block;
+            padding: 0;
+        }
+
+        .grid.wide {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -4px;
+            margin-right: -4px;
+        }
+
+        .col {
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        .row.no-gutters .col {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .c-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        /* >= Tablet */
+
+        @media (min-width: 740px) {
+            .row {
+                margin-left: -8px;
+                margin-right: -8px;
+            }
+            .col {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            .m-0 {
+                display: none;
+            }
+            .m-1,
+            .m-2,
+            .m-3,
+            .m-4,
+            .m-5,
+            .m-6,
+            .m-7,
+            .m-8,
+            .m-9,
+            .m-10,
+            .m-11,
+            .m-12 {
+                display: block;
+            }
+            .m-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+            .m-4 {
+                flex: 0 0 33.33333%;
+                max-width: 33.33333%;
+            }
+            .m-5 {
+                flex: 0 0 41.66667%;
+                max-width: 41.66667%;
+            }
+            .m-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .m-7 {
+                flex: 0 0 58.33333%;
+                max-width: 58.33333%;
+            }
+            .m-12 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        /* PC medium resolution > */
+
+        @media (min-width: 1113px) {
+            .row {
+                margin-left: -12px;
+                margin-right: -12px;
+            }
+            .col {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+            .l-0 {
+                display: none;
+            }
+            .l-1,
+            .l-2,
+            .l-2-4,
+            .l-3,
+            .l-4,
+            .l-5,
+            .l-6,
+            .l-7,
+            .l-12 {
+                display: block;
+            }
+            .l-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+            .l-4 {
+                flex: 0 0 33.33333%;
+                max-width: 33.33333%;
+            }
+            .l-5 {
+                flex: 0 0 41.66667%;
+                max-width: 41.66667%;
+            }
+            .l-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .l-7 {
+                flex: 0 0 58.33333%;
+                max-width: 58.33333%;
+            }
+            .l-12 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        /* Tablet - PC low resolution */
+
+        @media (min-width: 740px) and (max-width: 1023px) {
+            .wide {
+                width: 720px;
+            }
+        }
+
+        /* > PC low resolution */
+
+        @media (min-width: 1024px) and (max-width: 1239px) {
+            .wide {
+                width: 984px;
+            }
+            .wide .row {
+                margin-left: -12px;
+                margin-right: -12px;
+            }
+            .wide .col {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+            .wide .l-0 {
+                display: none;
+            }
+            .wide .l-1,
+            .wide .l-2,
+            .wide .l-2-4,
+            .wide .l-3,
+            .wide .l-4,
+            .wide .l-5,
+            .wide .l-6,
+            .wide .l-7,
+            .wide .l-8,
+            .wide .l-9,
+            .wide .l-10,
+            .wide .l-11,
+            .wide .l-12 {
+                display: block;
+            }
+            .wide .l-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+            .wide .l-4 {
+                flex: 0 0 33.33333%;
+                max-width: 33.33333%;
+            }
+            .wide .l-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .wide .l-12 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body class="defult-home">
+    <!-- Main content Start -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <img src="/resource/airsense/wp-content/img/airsense.jpg" class="logo me-auto" href="index.html" height="50" />
+
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto" href="/">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>Trạm quan trắc</span> <i class="bi bi-chevron-down"></i
+          ></a>
+                        <ul>
+                            <li><a href="/map">Dữ liệu trạm</a></li>
+                            <li><a href="/report_station">Export dữ liệu</a></li>
+                            <li><a href="/faq">F.A.Q</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><span>Tin tức</span> <i class="bi bi-chevron-down"></i
+          ></a>
+                        <ul>
+                            <li><a href="/blog">Môi trường</a></li>
+                            <li><a href="#">STEM</a></li>
+                            <li><a href="#">Hoạt động</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><span>Đào tạo</span> <i class="bi bi-chevron-down"></i
+          ></a>
+                        <ul>
+                            <li><a href="#">Khóa học</a></li>
+                            <li><a href="#">Bài tập</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/product"><span>Sản phẩm</span></a>
+                    </li>
+                    <li><a class="nav-link scrollto" href="/about">Giới thiệu</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+            <div class="header-item-search">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="header-item-cart">
+                <a href="/sale/cart">
+        <i class="fa fa-shopping-cart icon-shopping-cart"> </i>
+        <span class="product-count" id="value_item_Cart">0</span>
+      </a>
+            </div>
+            <div id="linktoLogin" href="#" class="appointment-btn scrollto">
+                <span class="d-none d-md-inline" onclick="onLogin()">Đăng nhập</span>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function onLogin() {
+            Swal.fire({
+                title: "<strong>Tùy chọn đăng nhập</strong>",
+                icon: "info",
+                html: `<button class="btn btn-success btn-lg" onclick="onLoginAdmin()">Admin</button> ` +
+                    `<button  class="btn btn-primary btn-lg" onclick="onLoginCustomer()">Customer</button> `,
+                showConfirmButton: false,
+                showCloseButton: true,
+                // showCancelButton: true,
+                // focusConfirm: false,
+                // confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!',
+                // confirmButtonAriaLabel: "Thumbs up, great!",
+                // cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+                // cancelButtonAriaLabel: "Thumbs down",
+            });
+        }
+
+        function onLoginAdmin() {
+            window.location.href = "http://airsense.vn/login/admin";
+        }
+
+        function onLoginCustomer() {
+            window.location.href = "http://airsense.vn/login/customer";
+        }
+
+        function onReloadMenu() {
+            var data = localStorage.getItem("cart");
+            var dataCart = {
+                name: "info",
+                value: []
+            };
+            if (data != null) {
+                dataCart = JSON.parse(data);
+            }
+            console.log("onReload ........ dataCart", dataCart);
+            var costValue = 0;
+            var numberProduct = dataCart.value.length;
+
+            for (var i = 0; i < dataCart.value.length; i++) {
+                let item = dataCart.value[i];
+                costValue += item.number * item.imageInfo.cost_detail;
+            }
+            $("#shopping_item_Cart").html(" $" + costValue);
+            $("#value_item_Cart").html(numberProduct);
+            //shopping_logout_cart
+        }
+        setTimeout(() => {
+            onReloadMenu();
+        }, 0);
+
+        function addProductToCart(numberData, product_id, infoData, locatiom) {
+            var infoDetailProduct = {
+                product_id: product_id,
+                number: 1,
+                imageInfo: "",
+            };
+            // Get saved data from localStorage
+            var data = localStorage.getItem("cart");
+            var dataCart = {
+                name: "info",
+                value: []
+            };
+            if (data != null) {
+                dataCart = JSON.parse(data);
+            }
+            infoDetailProduct.number = numberData;
+            infoDetailProduct.imageInfo = dataSaveInfo[infoData][locatiom];
+            var fillter = dataCart.value.filter(
+                (o) => o.imageInfo.image_id == infoDetailProduct.imageInfo.image_id
+            );
+            if (fillter.length > 0) {
+                // đơn hàng tồn tại
+                return;
+            }
+            dataCart.value.push(infoDetailProduct);
+
+            // Save data to localStorage
+            localStorage.setItem("cart", JSON.stringify(dataCart));
+            onReload();
+        }
+    </script>
+    <!-- selectLoginMethod() -->
+
+    <div class="landing-page">
+        <section class="landing-page-introduction padding-right-left-12px">
+            <div class="grid wide">
+                <div class="row lp-alignitem-center">
+                    <div class="col l-7 m-7 c-12">
+                        <p class="introduction-about">Airsense - Dự án nghiên cứu và ứng dụng công nghệ vào việc theo dõi chất lượng không khí.</p>
+                        <div class="introduction-btn-wrapper">
+                            <button class="landing-page-btn">Tham gia ngay</button>
+                            <button class="landing-page-btn">Tìm hiểu thêm</button>
+                        </div>
+                    </div>
+                    <div class="col l-5 m-5 c-12" style="margin: 0px!important">
+                        <img src="/img/landing-page-img/lp-introduction.svg" class="introduction-img" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="landing-page-education padding-right-left-12px">
+            <div class="grid wide">
+                <h2 class="landing-page-section-heading landing-page-title">
+                    <span>AIRSENSE</span> ĐÀO TẠO
+                </h2>
+                <p class="landing-page-section-desc landing-page-desc">Hãy thiết lập các trạm trực tuyến và mang niềm vui học tập với cộng đồng lên kỹ thuật số. Đừng bỏ lỡ cơ hội này khi thế giới tiến lên kỹ thuật số.</p>
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="education-item">
+                            <img src="/img/landing-page-img/lp-education1.svg" alt="" class="education-item-img">
+                            <h3 class="education-item-title landing-page-title">Chương trình đào tạo</h3>
+                            <p class="education-item-desc landing-page-desc">Hãy cùng nhau tạo ra một cộng đồng học tập tuyệt vời với những người hướng dẫn và thực tập sinh.</p>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="education-item">
+                            <img src="/img/landing-page-img/lp-education2.svg" alt="" class="education-item-img">
+                            <h3 class="education-item-title landing-page-title">Truy cập trực tuyến 24/7</h3>
+                            <p class="education-item-desc landing-page-desc">
+                                Theo dõi các hoạt động của chúng tôi, xem các bài học, tìm giải pháp cho các câu hỏi với cộng đồng, tham gia vào các hoạt động và có trải nghiệm học tập tích cực. </p>
+
+                        </div>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <div class="education-item">
+                            <img src="/img/landing-page-img/lp-education3.svg" alt="" class="education-item-img">
+                            <h3 class="education-item-title landing-page-title">Chứng chỉ trực tuyến</h3>
+                            <p class="education-item-desc landing-page-desc">Hoàn thành khóa đào tạo thành công, giành được giải thưởng của chúng tôi và tiến gần hơn một chút đến mục tiêu nghề nghiệp của bạn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="landing-page-featured-course padding-right-left-12px">
+            <div class="grid wide">
+                <h2 class="landing-page-section-heading landing-page-title">Khoá học nổi bật</h2>
+                <p class="landing-page-section-desc landing-page-desc">Dễ dàng tìm thấy khoá học bạn muốn và tham gia
+                </p>
+                <div class="featured-course-see-more">
+                    <a href="#" class="featured-course-see-more-link">Xem thêm</a>
+                    <i class="featured-course-see-more-icon fas fa-chevron-right"></i>
+                </div>
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">C++ cơ bản</h3>
+                                <p class="featured-course-item-desc landing-page-desc">25 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">C# cơ bản </h3>
+                                <p class="featured-course-item-desc landing-page-desc">15 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Html cơ bản</h3>
+                                <p class="featured-course-item-desc landing-page-desc">25 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Javascript cơ bản</h3>
+                                <p class="featured-course-item-desc landing-page-desc">25 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Css cơ bản</h3>
+                                <p class="featured-course-item-desc landing-page-desc">20 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Làm quen với reactjs</h3>
+                                <p class="featured-course-item-desc landing-page-desc">35 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Python cơ bản</h3>
+                                <p class="featured-course-item-desc landing-page-desc">17 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Machine learning basic</h3>
+                                <p class="featured-course-item-desc landing-page-desc">45 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Github tutorial</h3>
+                                <p class="featured-course-item-desc landing-page-desc">5 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Deep Learning basic</h3>
+                                <p class="featured-course-item-desc landing-page-desc">17 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Machine learning</h3>
+                                <p class="featured-course-item-desc landing-page-desc">40 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Gitlab code</h3>
+                                <p class="featured-course-item-desc landing-page-desc">10 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">C# advanced</h3>
+                                <p class="featured-course-item-desc landing-page-desc">27 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Nodejs basic</h3>
+                                <p class="featured-course-item-desc landing-page-desc">23 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="featured-course-item">
+                            <img src="/img/landing-page-img/lp-featured-course.svg" alt="" class="featured-course-item-img">
+                            <div class="featured-course-item-info">
+                                <h3 class="featured-course-item-name landing-page-title">Note-tip-trick python</h3>
+                                <p class="featured-course-item-desc landing-page-desc">5 bài học</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="landing-page-free-training padding-right-left-12px">
+            <div class="grid wide">
+                <h2 class="landing-page-section-heading landing-page-title">
+                    <span>AIRSENSE</span> ĐÀO TẠO miễn phí
+                </h2>
+                <div class="row">
+                    <div class="col l-6 m-6 c-12">
+                        <div class="free-training-item">
+                            <img src="/img/landing-page-img/lp-free-training1.svg" alt="" class="free-training-item-img">
+                            <p class="free-training-item-desc landing-page-desc">Thoát khỏi chương trình giảng dạy nhàm chán không thay đổi, thiết lập hệ thống của riêng bạn. giáo dục miễn phí trải nghiệm sự phấn khích và niềm vui.</p>
+                            <button class="landing-page-btn free-training-item-btn-left">Tham gia học</button>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-6 c-12">
+                        <div class="free-training-item">
+                            <img src="/img/landing-page-img/lp-free-training2.svg" alt="" class="free-training-item-img">
+                            <p class="free-training-item-desc landing-page-desc">Trải nghiệm học tập như một phần của cộng đồng của chúng tôi. Sản xuất, phát triển, thiết kế, kiếm tiền bằng những gì bạn học được.
+                            </p>
+                            <button class="landing-page-btn free-training-item-btn-right">Tham gia diễn đàn</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <!-- <h3>Medilab</h3> -->
+                        <img src="/resource/airsense/wp-content/img/airsense.jpg" alt="..." height="50">
+                        <p style="font-family: Arial;">
+                            <strong>SPARC lab - Viện Điện tử Viễn thông<br>Đại học Bách Khoa Hà Nội</strong><br>
+                            <strong>Address:</strong> Phòng 618, Tòa nhà Thư viện Tạ Quang Bửu, Đại học Bách Khoa Hà Nội<br>
+
+                            <strong>Phone:</strong> +84 988968338<br>
+                            <strong>Email:</strong> airsensevietnam@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>AirSense</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/about">About AirSense</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/faq">AirSense Sensor</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/map">AirSense Map</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Couse</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Social Networks</h4>
+                        <p>Thanks for connecting us !</p>
+                        <div class="social-links text-md-right pt-3 pt-md-0">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/php-email-form/validate.js"></script>
+    <script src="/assets/vendor/purecounter/purecounter.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
